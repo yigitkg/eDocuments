@@ -1,0 +1,25 @@
+/* components/HomePage/styles.css */
+
+.mainContainer {
+  width: calc(100% - 16px); /* Subtracting 8px from both sides */
+  margin: 8px; /* This gives an 8px margin on all sides */
+  box-sizing: border-box; /* Ensures padding and borders are included in the width */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.title {
+  flex-grow: 1;
+}
+
+.logoutButton {
+  font-size: 16px;
+  padding: 8px 16px;
+  width: 144px;
+}

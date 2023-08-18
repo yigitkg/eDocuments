@@ -34,3 +34,13 @@ This is a React-based E-Invoice tracking application, offering a range of featur
 **Pagination**: Navigate between different pages of invoices using the pagination component.
 
 **Log Out**: You can log out from the application, which will erase the login cookie and secure your session
+
+##  Code Structure
+**LoginForm.jsx**: This component renders the login form and handles login functionality.
+
+**cookies.js**: Contains helper functions to set, get, and erase browser cookies.
+
+**authService.js**: Simulates an authentication service. This is where the login logic resides.
+
+**App.jsx**: The main component of the application. It manages user authentication and routes.
+Future Enhancement

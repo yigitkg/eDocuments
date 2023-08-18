@@ -16,3 +16,9 @@ This is a React-based E-Invoice tracking application, offering a range of featur
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yigitkg/eDocuments.git
+   
+   cd e-invoice-tracking-app
+   
+   npm install
+   
+   npm start

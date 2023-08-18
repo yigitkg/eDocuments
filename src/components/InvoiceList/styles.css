@@ -132,3 +132,11 @@ table td {
   background-color: #2196f3; /* A vibrant blue */
   color: #ffffff;
 }
+
+.iconBtnGreen {
+  background: none;
+  border: none;
+  margin-right: 4px;
+  background-color: #4caf50; /* A more balanced green */
+  color: #ffffff; /* To ensure the icon is visible */
+}

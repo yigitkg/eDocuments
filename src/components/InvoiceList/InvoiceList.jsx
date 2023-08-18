@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import DropdownMenu from '../DropdownMenu/DropdownMenu';
 import './styles.css';
 import {
   faMagnifyingGlass,
@@ -28,6 +29,8 @@ function InvoiceList() {
   const [invoices, setInvoices] = useState([]);
   const [perPage, setPerPage] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [selectedInvoice, setSelectedInvoice] = useState(null);
 
   useEffect(() => {
     fetch('/invoices.json')
@@ -169,9 +172,7 @@ function InvoiceList() {
                   <button className="iconBtn yellow">
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                   </button>
-                  <button className="iconBtn green">
-                    <FontAwesomeIcon icon={faBars} />
-                  </button>
+                  <DropdownMenu />
                 </td>
               </tr>
             );

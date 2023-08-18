@@ -1,5 +1,7 @@
 # E-Invoice Tracking Application
 
+![CatJet Banner](https://raw.githubusercontent.com/yigitkg/CatJet/main/CatJetDisplayImage.png?token=GHSAT0AAAAAACGDIZBVNZF2NROZIFNUGJCKZG3YZWA)
+
 This is a React-based E-Invoice tracking application, offering a range of features including filtering, a comprehensive dashboard, pagination, and secure login functionality using cookies.
 
 ## Features

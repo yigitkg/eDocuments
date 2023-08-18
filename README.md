@@ -22,5 +22,5 @@ This is a React-based E-Invoice tracking application, offering a range of featur
    npm install
    ```bash
    npm start
-   
-This will launch the application on http://localhost:3000.
+    ```
+   This will launch the application on http://localhost:3000.

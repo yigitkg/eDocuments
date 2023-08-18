@@ -22,29 +22,100 @@ table td {
   border: 1px solid #e0e0e0;
 }
 
-tr.even {
-  background-color: #f9f9f9;
-}
-
-tr.odd {
-  background-color: #e9e9e9;
-}
-
 .paginationControls {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-  justify-content: center; /* Merkezde hizalamak için ekledim. */
+  justify-content: center;
 }
 
 .paginationControls button,
 .paginationControls select {
   margin: 0 5px;
-  padding: 5px 10px; /* Buton boyutunu azaltmak için doldurma değerini düzenledim. */
-  font-size: 0.8rem; /* Yazı boyutunu azaltmak için ekledim. */
+  padding: 5px 10px;
+  font-size: 0.8rem;
   width: 96px;
 }
 
 .paginationControls button:disabled {
   opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.grey {
+  color: grey;
+}
+
+.actionBtn {
+  background-color: #81d5ff;
+  border: 1px solid;
+  margin-top: 4px;
+}
+
+.actionBtn.red {
+  color: red;
+  border-color: red;
+}
+
+.actionBtn.green {
+  color: green;
+  border-color: green;
+}
+
+.actionBtn.purple {
+  color: purple;
+  border-color: purple;
+}
+
+.kdv-1 {
+  color: #ff9999;
+}
+
+.kdv-8 {
+  color: #99e6ff;
+}
+
+.kdv-10 {
+  color: #ffcc66;
+}
+
+.kdv-18 {
+  color: #99ff99;
+}
+
+.kdv-20 {
+  color: #cc99ff;
+}
+
+.kdv-total {
+  color: #b3b3b3;
+}
+
+.iconBtn {
+  background: none;
+  border: none;
+  margin-right: 4px;
+}
+
+.iconBtn.red {
+  background-color: red;
+}
+
+.iconBtn.orange {
+  background-color: orange;
+}
+
+.iconBtn.lila {
+  background-color: #d8b2d8;
+}
+
+.iconBtn.yellow {
+  background-color: yellow;
 }

@@ -1,197 +1,527 @@
 [
   {
     "id": 1,
-    "column1": "Veri1",
-    "column2": "Veri2",
-    "column3": "Veri3",
-    "column4": "Veri4",
-    "column5": "Veri5",
-    "column6": "Veri6",
-    "column7": "Veri7",
-    "column8": "Veri8",
-    "column9": "Veri9",
-    "column10": "Veri10"
+    "faturaNo": {
+      "no": "ZXC2023000000029",
+      "ettn": "24FDEA-7636-4D5D-9213-553DB2718187"
+    },
+    "olusturmaTarihi": {
+      "tarih": "28.07.2023",
+      "saat": "09.04.00"
+    },
+    "alici": {
+      "vknTckn": "2921197346",
+      "unvan": "Denizcan Örnek"
+    },
+    "tutar": {
+      "odenecek": "110,00 TL",
+      "vhtt": "VHTT: 100,00 TL"
+    },
+    "kdv": {
+      "percentages": {
+        "1": null,
+        "8": null,
+        "10": "10.00",
+        "18": null,
+        "20": null
+      },
+      "toplam": "10.00"
+    },
+    "senaryo": {
+      "tip": "e-arşiv / Kağıt",
+      "faturaTipi": "Satış",
+      "senaryo": "iade"
+    },
+    "faturaDurumu": "e-Arşiv İptal"
   },
   {
     "id": 2,
-    "column1": "Veri11",
-    "column2": "Veri12",
-    "column3": "Veri13",
-    "column4": "Veri14",
-    "column5": "Veri15",
-    "column6": "Veri16",
-    "column7": "Veri17",
-    "column8": "Veri18",
-    "column9": "Veri19",
-    "column10": "Veri20"
+    "faturaNo": {
+      "no": "ABC2023000000021",
+      "ettn": "24FDFB-7636-4D4D-9213-563DB2718181"
+    },
+    "olusturmaTarihi": {
+      "tarih": "29.07.2023",
+      "saat": "10.05.00"
+    },
+    "alici": {
+      "vknTckn": "2921197356",
+      "unvan": "Ahmet Yılmaz"
+    },
+    "tutar": {
+      "odenecek": "120,00 TL",
+      "vhtt": "VHTT: 110,00 TL"
+    },
+    "kdv": {
+      "percentages": {
+        "1": null,
+        "8": null,
+        "10": "11.00",
+        "18": null,
+        "20": null
+      },
+      "toplam": "11.00"
+    },
+    "senaryo": {
+      "tip": "e-arşiv / Kağıt",
+      "faturaTipi": "Alış",
+      "senaryo": "iade"
+    },
+    "faturaDurumu": "Onaylandı"
   },
   {
     "id": 3,
-    "column1": "Veri21",
-    "column2": "Veri22",
-    "column3": "Veri23",
-    "column4": "Veri24",
-    "column5": "Veri25",
-    "column6": "Veri26",
-    "column7": "Veri27",
-    "column8": "Veri28",
-    "column9": "Veri29",
-    "column10": "Veri30"
+    "faturaNo": {
+      "no": "XYZ2023000000042",
+      "ettn": "24FDEF-7636-4D2A-9213-563DB2718109"
+    },
+    "olusturmaTarihi": {
+      "tarih": "30.07.2023",
+      "saat": "15.30.00"
+    },
+    "alici": {
+      "vknTckn": "2921197362",
+      "unvan": "Ayşe Demir"
+    },
+    "tutar": {
+      "odenecek": "75,50 TL",
+      "vhtt": "VHTT: 70,00 TL"
+    },
+    "kdv": {
+      "percentages": {
+        "1": null,
+        "8": null,
+        "10": "5.50",
+        "18": null,
+        "20": null
+      },
+      "toplam": "5.50"
+    },
+    "senaryo": {
+      "tip": "e-arşiv / Kağıt",
+      "faturaTipi": "Satış",
+      "senaryo": "normal"
+    },
+    "faturaDurumu": "Gönderildi"
   },
   {
     "id": 4,
-    "column1": "Veri31",
-    "column2": "Veri32",
-    "column3": "Veri33",
-    "column4": "Veri34",
-    "column5": "Veri35",
-    "column6": "Veri36",
-    "column7": "Veri37",
-    "column8": "Veri38",
-    "column9": "Veri39",
-    "column10": "Veri40"
+    "faturaNo": {
+      "no": "PQR2023000000067",
+      "ettn": "24FDEF-7636-4D2A-9213-563DB2718112"
+    },
+    "olusturmaTarihi": {
+      "tarih": "31.07.2023",
+      "saat": "14.20.00"
+    },
+    "alici": {
+      "vknTckn": "2921197387",
+      "unvan": "Mehmet Kaya"
+    },
+    "tutar": {
+      "odenecek": "230,00 TL",
+      "vhtt": "VHTT: 210,00 TL"
+    },
+    "kdv": {
+      "percentages": {
+        "1": null,
+        "8": null,
+        "10": "20.00",
+        "18": null,
+        "20": null
+      },
+      "toplam": "20.00"
+    },
+    "senaryo": {
+      "tip": "e-arşiv / Kağıt",
+      "faturaTipi": "Alış",
+      "senaryo": "normal"
+    },
+    "faturaDurumu": "Ödendi"
   },
   {
     "id": 5,
-    "column1": "Veri41",
-    "column2": "Veri42",
-    "column3": "Veri43",
-    "column4": "Veri44",
-    "column5": "Veri45",
-    "column6": "Veri46",
-    "column7": "Veri47",
-    "column8": "Veri48",
-    "column9": "Veri49",
-    "column10": "Veri50"
+    "faturaNo": {
+      "no": "LMN2023000000089",
+      "ettn": "24FDEF-7636-4D2A-9213-563DB2718115"
+    },
+    "olusturmaTarihi": {
+      "tarih": "01.08.2023",
+      "saat": "11.45.00"
+    },
+    "alici": {
+      "vknTckn": "2921197411",
+      "unvan": "Selin Yıldız"
+    },
+    "tutar": {
+      "odenecek": "150,00 TL",
+      "vhtt": "VHTT: 140,00 TL"
+    },
+    "kdv": {
+      "percentages": {
+        "1": null,
+        "8": null,
+        "10": "10.00",
+        "18": null,
+        "20": null
+      },
+      "toplam": "10.00"
+    },
+    "senaryo": {
+      "tip": "e-arşiv / Elektronik",
+      "faturaTipi": "Satış",
+      "senaryo": "normal"
+    },
+    "faturaDurumu": "Beklemede"
   },
   {
     "id": 6,
-    "column1": "Veri51",
-    "column2": "Veri52",
-    "column3": "Veri53",
-    "column4": "Veri54",
-    "column5": "Veri55",
-    "column6": "Veri56",
-    "column7": "Veri57",
-    "column8": "Veri58",
-    "column9": "Veri59",
-    "column10": "Veri60"
+    "faturaNo": {
+      "no": "JKL2023000000111",
+      "ettn": "24FDEF-7636-4D2A-9213-563DB2718118"
+    },
+    "olusturmaTarihi": {
+      "tarih": "02.08.2023",
+      "saat": "08.30.00"
+    },
+    "alici": {
+      "vknTckn": "2921197455",
+      "unvan": "Ali Can"
+    },
+    "tutar": {
+      "odenecek": "75,00 TL",
+      "vhtt": "VHTT: 70,00 TL"
+    },
+    "kdv": {
+      "percentages": {
+        "1": null,
+        "8": null,
+        "10": "5.00",
+        "18": null,
+        "20": null
+      },
+      "toplam": "5.00"
+    },
+    "senaryo": {
+      "tip": "e-arşiv / Elektronik",
+      "faturaTipi": "Satış",
+      "senaryo": "iade"
+    },
+    "faturaDurumu": "Gönderildi"
   },
   {
     "id": 7,
-    "column1": "Veri61",
-    "column2": "Veri62",
-    "column3": "Veri63",
-    "column4": "Veri64",
-    "column5": "Veri65",
-    "column6": "Veri66",
-    "column7": "Veri67",
-    "column8": "Veri68",
-    "column9": "Veri69",
-    "column10": "Veri70"
+    "faturaNo": {
+      "no": "DEF2023000000133",
+      "ettn": "24FDEF-7636-4D2A-9213-563DB2718121"
+    },
+    "olusturmaTarihi": {
+      "tarih": "03.08.2023",
+      "saat": "16.15.00"
+    },
+    "alici": {
+      "vknTckn": "2921197499",
+      "unvan": "Hasan Karaca"
+    },
+    "tutar": {
+      "odenecek": "85,00 TL",
+      "vhtt": "VHTT: 80,00 TL"
+    },
+    "kdv": {
+      "percentages": {
+        "1": null,
+        "8": null,
+        "10": "5.00",
+        "18": null,
+        "20": null
+      },
+      "toplam": "5.00"
+    },
+    "senaryo": {
+      "tip": "e-arşiv / Kağıt",
+      "faturaTipi": "Satış",
+      "senaryo": "iade"
+    },
+    "faturaDurumu": "Onaylandı"
   },
   {
     "id": 8,
-    "column1": "Veri71",
-    "column2": "Veri72",
-    "column3": "Veri73",
-    "column4": "Veri74",
-    "column5": "Veri75",
-    "column6": "Veri76",
-    "column7": "Veri77",
-    "column8": "Veri78",
-    "column9": "Veri79",
-    "column10": "Veri80"
+    "faturaNo": {
+      "no": "GHI2023000000155",
+      "ettn": "24FDEF-7636-4D2A-9213-563DB2718124"
+    },
+    "olusturmaTarihi": {
+      "tarih": "04.08.2023",
+      "saat": "12.00.00"
+    },
+    "alici": {
+      "vknTckn": "2921197522",
+      "unvan": "Merve Öztürk"
+    },
+    "tutar": {
+      "odenecek": "42,50 TL",
+      "vhtt": "VHTT: 40,00 TL"
+    },
+    "kdv": {
+      "percentages": {
+        "1": null,
+        "8": null,
+        "10": "2.50",
+        "18": null,
+        "20": null
+      },
+      "toplam": "2.50"
+    },
+    "senaryo": {
+      "tip": "e-arşiv / Elektronik",
+      "faturaTipi": "Alış",
+      "senaryo": "normal"
+    },
+    "faturaDurumu": "Ödendi"
   },
   {
     "id": 9,
-    "column1": "Veri81",
-    "column2": "Veri82",
-    "column3": "Veri83",
-    "column4": "Veri84",
-    "column5": "Veri85",
-    "column6": "Veri86",
-    "column7": "Veri87",
-    "column8": "Veri88",
-    "column9": "Veri89",
-    "column10": "Veri90"
+    "faturaNo": {
+      "no": "MNO2023000000177",
+      "ettn": "24FDEF-7636-4D2A-9213-563DB2718127"
+    },
+    "olusturmaTarihi": {
+      "tarih": "05.08.2023",
+      "saat": "09.30.00"
+    },
+    "alici": {
+      "vknTckn": "2921197556",
+      "unvan": "Ebru Tekin"
+    },
+    "tutar": {
+      "odenecek": "90,00 TL",
+      "vhtt": "VHTT: 85,00 TL"
+    },
+    "kdv": {
+      "percentages": {
+        "1": null,
+        "8": null,
+        "10": "5.00",
+        "18": null,
+        "20": null
+      },
+      "toplam": "5.00"
+    },
+    "senaryo": {
+      "tip": "e-arşiv / Kağıt",
+      "faturaTipi": "Satış",
+      "senaryo": "normal"
+    },
+    "faturaDurumu": "Gönderildi"
   },
   {
     "id": 10,
-    "column1": "Veri91",
-    "column2": "Veri92",
-    "column3": "Veri93",
-    "column4": "Veri94",
-    "column5": "Veri95",
-    "column6": "Veri96",
-    "column7": "Veri97",
-    "column8": "Veri98",
-    "column9": "Veri99",
-    "column10": "Veri100"
+    "faturaNo": {
+      "no": "PQR2023000000199",
+      "ettn": "24FDEF-7636-4D2A-9213-563DB2718130"
+    },
+    "olusturmaTarihi": {
+      "tarih": "06.08.2023",
+      "saat": "14.50.00"
+    },
+    "alici": {
+      "vknTckn": "2921197588",
+      "unvan": "Fatma Demirci"
+    },
+    "tutar": {
+      "odenecek": "62,00 TL",
+      "vhtt": "VHTT: 60,00 TL"
+    },
+    "kdv": {
+      "percentages": {
+        "1": null,
+        "8": null,
+        "10": "2.00",
+        "18": null,
+        "20": null
+      },
+      "toplam": "2.00"
+    },
+    "senaryo": {
+      "tip": "e-arşiv / Elektronik",
+      "faturaTipi": "Alış",
+      "senaryo": "iade"
+    },
+    "faturaDurumu": "Beklemede"
   },
   {
     "id": 11,
-    "column1": "Veri101",
-    "column2": "Veri102",
-    "column3": "Veri103",
-    "column4": "Veri104",
-    "column5": "Veri105",
-    "column6": "Veri106",
-    "column7": "Veri107",
-    "column8": "Veri108",
-    "column9": "Veri109",
-    "column10": "Veri110"
+    "faturaNo": {
+      "no": "STU2023000000221",
+      "ettn": "24FDEF-7636-4D2A-9213-563DB2718133"
+    },
+    "olusturmaTarihi": {
+      "tarih": "07.08.2023",
+      "saat": "17.20.00"
+    },
+    "alici": {
+      "vknTckn": "2921197622",
+      "unvan": "Cemal Akın"
+    },
+    "tutar": {
+      "odenecek": "175,00 TL",
+      "vhtt": "VHTT: 160,00 TL"
+    },
+    "kdv": {
+      "percentages": {
+        "1": null,
+        "8": null,
+        "10": "15.00",
+        "18": null,
+        "20": null
+      },
+      "toplam": "15.00"
+    },
+    "senaryo": {
+      "tip": "e-arşiv / Kağıt",
+      "faturaTipi": "Satış",
+      "senaryo": "normal"
+    },
+    "faturaDurumu": "Onaylandı"
   },
   {
     "id": 12,
-    "column1": "Veri111",
-    "column2": "Veri112",
-    "column3": "Veri113",
-    "column4": "Veri114",
-    "column5": "Veri115",
-    "column6": "Veri116",
-    "column7": "Veri117",
-    "column8": "Veri118",
-    "column9": "Veri119",
-    "column10": "Veri120"
+    "faturaNo": {
+      "no": "VWX2023000000243",
+      "ettn": "24FDEF-7636-4D2A-9213-563DB2718136"
+    },
+    "olusturmaTarihi": {
+      "tarih": "08.08.2023",
+      "saat": "10.10.00"
+    },
+    "alici": {
+      "vknTckn": "2921197655",
+      "unvan": "Gamze Avcı"
+    },
+    "tutar": {
+      "odenecek": "95,00 TL",
+      "vhtt": "VHTT: 90,00 TL"
+    },
+    "kdv": {
+      "percentages": {
+        "1": null,
+        "8": null,
+        "10": "5.00",
+        "18": null,
+        "20": null
+      },
+      "toplam": "5.00"
+    },
+    "senaryo": {
+      "tip": "e-arşiv / Elektronik",
+      "faturaTipi": "Alış",
+      "senaryo": "normal"
+    },
+    "faturaDurumu": "Ödendi"
   },
   {
     "id": 13,
-    "column1": "Veri121",
-    "column2": "Veri122",
-    "column3": "Veri123",
-    "column4": "Veri124",
-    "column5": "Veri125",
-    "column6": "Veri126",
-    "column7": "Veri127",
-    "column8": "Veri128",
-    "column9": "Veri129",
-    "column10": "Veri130"
+    "faturaNo": {
+      "no": "ABC2023000000265",
+      "ettn": "24FDEF-7636-4D2A-9213-563DB2718139"
+    },
+    "olusturmaTarihi": {
+      "tarih": "09.08.2023",
+      "saat": "09.15.00"
+    },
+    "alici": {
+      "vknTckn": "2921197688",
+      "unvan": "Ali Yılmaz"
+    },
+    "tutar": {
+      "odenecek": "200,00 TL",
+      "vhtt": "VHTT: 180,00 TL"
+    },
+    "kdv": {
+      "percentages": {
+        "1": null,
+        "8": "8.00",
+        "10": "10.00",
+        "18": null,
+        "20": "10.00"
+      },
+      "toplam": "28.00"
+    },
+    "senaryo": {
+      "tip": "e-arşiv / Kağıt",
+      "faturaTipi": "Satış",
+      "senaryo": "normal"
+    },
+    "faturaDurumu": "Beklemede"
   },
   {
     "id": 14,
-    "column1": "Veri131",
-    "column2": "Veri132",
-    "column3": "Veri133",
-    "column4": "Veri134",
-    "column5": "Veri135",
-    "column6": "Veri136",
-    "column7": "Veri137",
-    "column8": "Veri138",
-    "column9": "Veri139",
-    "column10": "Veri140"
+    "faturaNo": {
+      "no": "XYZ2023000000287",
+      "ettn": "24FDEF-7636-4D2A-9213-563DB2718142"
+    },
+    "olusturmaTarihi": {
+      "tarih": "10.08.2023",
+      "saat": "13.30.00"
+    },
+    "alici": {
+      "vknTckn": "2921197711",
+      "unvan": "Aylin Demirci"
+    },
+    "tutar": {
+      "odenecek": "450,00 TL",
+      "vhtt": "VHTT: 400,00 TL"
+    },
+    "kdv": {
+      "percentages": {
+        "1": "1.00",
+        "8": "8.00",
+        "10": "10.00",
+        "18": "18.00",
+        "20": "20.00"
+      },
+      "toplam": "57.00"
+    },
+    "senaryo": {
+      "tip": "e-arşiv / Elektronik",
+      "faturaTipi": "Satış",
+      "senaryo": "iade"
+    },
+    "faturaDurumu": "Gönderildi"
   },
   {
     "id": 15,
-    "column1": "Veri141",
-    "column2": "Veri142",
-    "column3": "Veri143",
-    "column4": "Veri144",
-    "column5": "Veri145",
-    "column6": "Veri146",
-    "column7": "Veri147",
-    "column8": "Veri148",
-    "column9": "Veri149",
-    "column10": "Veri150"
+    "faturaNo": {
+      "no": "LMN2023000000309",
+      "ettn": "24FDEF-7636-4D2A-9213-563DB2718145"
+    },
+    "olusturmaTarihi": {
+      "tarih": "11.08.2023",
+      "saat": "16.45.00"
+    },
+    "alici": {
+      "vknTckn": "2921197744",
+      "unvan": "Kemal Aydın"
+    },
+    "tutar": {
+      "odenecek": "320,00 TL",
+      "vhtt": "VHTT: 300,00 TL"
+    },
+    "kdv": {
+      "percentages": {
+        "1": "1.00",
+        "8": "8.00",
+        "10": "10.00",
+        "18": "18.00",
+        "20": "20.00"
+      },
+      "toplam": "57.00"
+    },
+    "senaryo": {
+      "tip": "e-arşiv / Kağıt",
+      "faturaTipi": "Alış",
+      "senaryo": "normal"
+    },
+    "faturaDurumu": "Onaylandı"
   }
 ]

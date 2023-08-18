@@ -1,3 +1,4 @@
+//authService.js
 import { setCookie } from '../helpers/cookies';
 
 export const login = async (username, password) => {

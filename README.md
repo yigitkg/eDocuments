@@ -35,7 +35,7 @@ This is a React-based E-Invoice tracking application, offering a range of featur
 
 **Log Out**: You can log out from the application, which will erase the login cookie and secure your session
 
-##  Code Structure
+## Code Structure
 **LoginForm.jsx**: This component renders the login form and handles login functionality.
 
 **cookies.js**: Contains helper functions to set, get, and erase browser cookies.

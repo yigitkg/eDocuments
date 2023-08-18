@@ -16,11 +16,18 @@ This is a React-based E-Invoice tracking application, offering a range of featur
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yigitkg/eDocuments.git
-   ```bash
+ 
    cd e-invoice-tracking-app
-   ```bash
+   
    npm install
-   ```bash
+   
    npm start
     ```
+   
    This will launch the application on http://localhost:3000.
+
+## Usage
+**Login**: Start by logging in using the provided credentials. For the sake of this demonstration, the username is *admin* and the password is *admin123*.
+**Dashboard**: Once logged in, you'll be redirected to the dashboard. Here, you can view all the invoices and use the provided filtering options to narrow down your search.
+**Pagination**: Navigate between different pages of invoices using the pagination component.
+**Log Out**: You can log out from the application, which will erase the login cookie and secure your session

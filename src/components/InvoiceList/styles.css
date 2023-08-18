@@ -105,17 +105,30 @@ table td {
 }
 
 .iconBtn.red {
-  background-color: red;
+  background-color: #f44336; /* A more balanced red */
+  color: #ffffff; /* To ensure the icon is visible */
 }
 
 .iconBtn.orange {
-  background-color: orange;
+  background-color: #ff9800; /* A more balanced orange */
+  color: #ffffff;
 }
 
 .iconBtn.lila {
-  background-color: #d8b2d8;
+  background-color: #9c27b0; /* A more balanced purple (Lila) */
+  color: #ffffff;
 }
 
 .iconBtn.yellow {
-  background-color: yellow;
+  background-color: #ffeb3b; /* A bright yellow */
+}
+
+.iconBtn.green {
+  background-color: #4caf50; /* A more balanced green */
+  color: #ffffff;
+}
+
+.iconBtn.blue {
+  background-color: #2196f3; /* A vibrant blue */
+  color: #ffffff;
 }

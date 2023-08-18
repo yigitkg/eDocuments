@@ -1,10 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css';
 
-function calculateTotalKDV(kdvPercentages) {
-  return Object.values(kdvPercentages)
-    .reduce((sum, value) => sum + parseFloat(value || '0'), 0)
-    .toFixed(2); // Sayıyı 2 basamaklı ondalık sayıya dönüştür
+function calculateKDVValues(kdvPercentages, vhtt) {
+  let totalKDV = 0;
+  let kdvValues = {};
+
+  for (let [percentage, isActive] of Object.entries(kdvPercentages)) {
+    if (isActive) {
+      let kdvValue = (vhtt * (parseInt(percentage) / 100)).toFixed(2);
+      kdvValues[percentage] = kdvValue;
+      totalKDV += parseFloat(kdvValue);
+    }
+  }
+
+  return { kdvValues, totalKDV: totalKDV.toFixed(2) };
 }
 
 function InvoiceList() {
@@ -74,84 +83,91 @@ function InvoiceList() {
           </tr>
         </thead>
         <tbody>
-          {currentInvoices.map((invoice) => (
-            <tr key={invoice.id}>
-              <td className="invoiceNumber">
-                <span className="red">{invoice.faturaNo.no}</span>
-                <br />
-                <span className="green">{invoice.faturaNo.ettn}</span>
-                <br />
-                <button className="actionBtn">İptal</button>
-                <button className="actionBtn">Deneme</button>
-              </td>
-              <td>
-                <span className="grey">{invoice.olusturmaTarihi.tarih}</span>
-                <br />
-                <span className="grey">{invoice.olusturmaTarihi.saat}</span>
-              </td>
-              <td>
-                <span className="red">{invoice.alici.vknTckn}</span>
-                <br />
-                <span className="green">{invoice.alici.unvan}</span>
-              </td>
-              <td>
-                <span className="red">{invoice.tutar.odenecek}</span>
-                <br />
-                <span className="grey">{invoice.tutar.vhtt}</span>
-              </td>
-              <td className="kdv">
-                {Object.entries(invoice.kdv.percentages).map(
-                  ([key, value]) =>
-                    value && (
-                      <span key={key} className={`kdv-${key}`}>
-                        %{key} = {value}
-                        <br />
-                      </span>
-                    )
-                )}
-                <span className="kdv-total">
-                  Toplam = {calculateTotalKDV(invoice.kdv.percentages)}
-                </span>
-              </td>
-              <td>
-                <button className="actionBtn red">{invoice.senaryo.tip}</button>
-                <br />
-                <button className="actionBtn green">
-                  {invoice.senaryo.faturaTipi}
-                </button>
-                <br />
-                <button className="actionBtn purple">
-                  {invoice.senaryo.senaryo}
-                </button>
-              </td>
-              <td
-                className={
-                  invoice.faturaDurumu === 'e-Arşiv İptal' ? 'grey' : 'green'
-                }
-              >
-                {invoice.faturaDurumu}
-              </td>
-              <td>
-                <button className="iconBtn blue">
-                  <i className="fa fa-trash"></i>
-                </button>
-                <button className="iconBtn orange">
-                  <i className="fa fa-pencil"></i>
-                </button>
-                <button className="iconBtn lila">
-                  <i className="fa fa-info"></i>
-                </button>
-              </td>
-              <td>
-                <button className="iconBtn orange">
-                  <i className="fa fa-refresh"></i>
-                </button>
-                <button className="iconBtn yellow">
-                  <i className="fa fa-star"></i>
-                </button>
-              </td>
-            </tr>
-          ))}
+          {currentInvoices.map((invoice) => {
+            const vhtt = parseFloat(
+              invoice.tutar.vhtt.split(' ')[1].replace(',', '.')
+            );
+            const { kdvValues, totalKDV } = calculateKDVValues(
+              invoice.kdv.percentages,
+              vhtt
+            );
+
+            return (
+              <tr key={invoice.id}>
+                <td className="invoiceNumber">
+                  <span className="red">{invoice.faturaNo.no}</span>
+                  <br />
+                  <span className="green">{invoice.faturaNo.ettn}</span>
+                  <br />
+                  <button className="actionBtn">İptal</button>
+                  <button className="actionBtn">Deneme</button>
+                </td>
+                <td>
+                  <span className="grey">{invoice.olusturmaTarihi.tarih}</span>
+                  <br />
+                  <span className="grey">{invoice.olusturmaTarihi.saat}</span>
+                </td>
+                <td>
+                  <span className="red">{invoice.alici.vknTckn}</span>
+                  <br />
+                  <span className="green">{invoice.alici.unvan}</span>
+                </td>
+                <td>
+                  <span className="red">{invoice.tutar.odenecek}</span>
+                  <br />
+                  <span className="grey">{invoice.tutar.vhtt}</span>
+                </td>
+                <td className="kdv">
+                  {Object.entries(kdvValues).map(([key, value]) => (
+                    <span key={key} className={`kdv-${key}`}>
+                      %{key} = {value} TL
+                      <br />
+                    </span>
+                  ))}
+                  <span className="kdv-total">Toplam = {totalKDV} TL</span>
+                </td>
+                <td>
+                  <button className="actionBtn red">
+                    {invoice.senaryo.tip}
+                  </button>
+                  <br />
+                  <button className="actionBtn green">
+                    {invoice.senaryo.faturaTipi}
+                  </button>
+                  <br />
+                  <button className="actionBtn purple">
+                    {invoice.senaryo.senaryo}
+                  </button>
+                </td>
+                <td
+                  className={
+                    invoice.faturaDurumu === 'e-Arşiv İptal' ? 'grey' : 'green'
+                  }
+                >
+                  {invoice.faturaDurumu}
+                </td>
+                <td>
+                  <button className="iconBtn blue">
+                    <i className="fa fa-tablet"></i>
+                  </button>
+                  <button className="iconBtn orange">
+                    <i className="fa fa-regular fa-book"></i>
+                  </button>
+                  <button className="iconBtn lila">
+                    <i class="fa fa-regular fa-envelope"></i>
+                  </button>
+                </td>
+                <td>
+                  <button className="iconBtn yellow">
+                    <i className="fa fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <button className="iconBtn green">
+                    <i class="fa fa-solid fa-bars"></i>
+                  </button>
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

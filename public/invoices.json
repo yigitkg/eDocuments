@@ -19,13 +19,13 @@
     },
     "kdv": {
       "percentages": {
-        "1": null,
-        "8": null,
-        "10": "10.00",
-        "18": null,
-        "20": "63.89"
+        "1": false,
+        "8": false,
+        "10": true,
+        "18": false,
+        "20": true
       },
-      "toplam": "10.00"
+      "toplam": ""
     },
     "senaryo": {
       "tip": "e-arşiv / Kağıt",
@@ -54,13 +54,13 @@
     },
     "kdv": {
       "percentages": {
-        "1": "3.00",
-        "8": null,
-        "10": "11.00",
-        "18": null,
-        "20": null
+        "1": true,
+        "8": false,
+        "10": true,
+        "18": false,
+        "20": false
       },
-      "toplam": "11.00"
+      "toplam": ""
     },
     "senaryo": {
       "tip": "e-arşiv / Kağıt",
@@ -89,13 +89,13 @@
     },
     "kdv": {
       "percentages": {
-        "1": null,
-        "8": null,
-        "10": "5.50",
-        "18": null,
-        "20": null
+        "1": false,
+        "8": false,
+        "10": true,
+        "18": false,
+        "20": false
       },
-      "toplam": "5.50"
+      "toplam": ""
     },
     "senaryo": {
       "tip": "e-arşiv / Kağıt",
@@ -124,13 +124,13 @@
     },
     "kdv": {
       "percentages": {
-        "1": null,
-        "8": "11.29",
-        "10": "20.00",
-        "18": "79.99",
-        "20": null
+        "1": false,
+        "8": true,
+        "10": true,
+        "18": true,
+        "20": false
       },
-      "toplam": "20.00"
+      "toplam": ""
     },
     "senaryo": {
       "tip": "e-arşiv / Kağıt",
@@ -159,13 +159,13 @@
     },
     "kdv": {
       "percentages": {
-        "1": null,
-        "8": "3.50",
-        "10": "5.00",
-        "18": null,
-        "20": "49.99"
+        "1": false,
+        "8": true,
+        "10": true,
+        "18": false,
+        "20": true
       },
-      "toplam": "10.00"
+      "toplam": ""
     },
     "senaryo": {
       "tip": "e-arşiv / Elektronik",
@@ -194,13 +194,13 @@
     },
     "kdv": {
       "percentages": {
-        "1": null,
-        "8": null,
-        "10": "5.00",
-        "18": null,
-        "20": null
+        "1": false,
+        "8": false,
+        "10": true,
+        "18": false,
+        "20": false
       },
-      "toplam": "5.00"
+      "toplam": ""
     },
     "senaryo": {
       "tip": "e-arşiv / Elektronik",
@@ -229,13 +229,13 @@
     },
     "kdv": {
       "percentages": {
-        "1": null,
-        "8": null,
-        "10": "5.00",
-        "18": null,
-        "20": null
+        "1": false,
+        "8": false,
+        "10": true,
+        "18": false,
+        "20": false
       },
-      "toplam": "5.00"
+      "toplam": ""
     },
     "senaryo": {
       "tip": "e-arşiv / Kağıt",
@@ -264,13 +264,13 @@
     },
     "kdv": {
       "percentages": {
-        "1": null,
-        "8": null,
-        "10": "2.50",
-        "18": null,
-        "20": null
+        "1": true,
+        "8": false,
+        "10": true,
+        "18": true,
+        "20": false
       },
-      "toplam": "2.50"
+      "toplam": ""
     },
     "senaryo": {
       "tip": "e-arşiv / Elektronik",
@@ -299,13 +299,13 @@
     },
     "kdv": {
       "percentages": {
-        "1": null,
-        "8": null,
-        "10": "5.00",
-        "18": null,
-        "20": null
+        "1": false,
+        "8": true,
+        "10": true,
+        "18": false,
+        "20": false
       },
-      "toplam": "5.00"
+      "toplam": ""
     },
     "senaryo": {
       "tip": "e-arşiv / Kağıt",
@@ -334,13 +334,13 @@
     },
     "kdv": {
       "percentages": {
-        "1": null,
-        "8": null,
-        "10": "2.00",
-        "18": null,
-        "20": null
+        "1": true,
+        "8": true,
+        "10": false,
+        "18": false,
+        "20": false
       },
-      "toplam": "2.00"
+      "toplam": ""
     },
     "senaryo": {
       "tip": "e-arşiv / Elektronik",
@@ -369,13 +369,13 @@
     },
     "kdv": {
       "percentages": {
-        "1": null,
-        "8": null,
-        "10": "15.00",
-        "18": null,
-        "20": null
+        "1": false,
+        "8": false,
+        "10": false,
+        "18": true,
+        "20": false
       },
-      "toplam": "15.00"
+      "toplam": ""
     },
     "senaryo": {
       "tip": "e-arşiv / Kağıt",
@@ -404,13 +404,13 @@
     },
     "kdv": {
       "percentages": {
-        "1": null,
-        "8": null,
-        "10": "5.00",
-        "18": null,
-        "20": null
+        "1": true,
+        "8": false,
+        "10": true,
+        "18": true,
+        "20": true
       },
-      "toplam": "5.00"
+      "toplam": ""
     },
     "senaryo": {
       "tip": "e-arşiv / Elektronik",
@@ -439,13 +439,13 @@
     },
     "kdv": {
       "percentages": {
-        "1": null,
-        "8": "8.00",
-        "10": "10.00",
-        "18": null,
-        "20": "10.00"
+        "1": false,
+        "8": true,
+        "10": true,
+        "18": false,
+        "20": true
       },
-      "toplam": "28.00"
+      "toplam": ""
     },
     "senaryo": {
       "tip": "e-arşiv / Kağıt",
@@ -474,13 +474,13 @@
     },
     "kdv": {
       "percentages": {
-        "1": "1.00",
-        "8": "8.00",
-        "10": "10.00",
-        "18": "18.00",
-        "20": "20.00"
+        "1": true,
+        "8": true,
+        "10": true,
+        "18": true,
+        "20": true
       },
-      "toplam": "57.00"
+      "toplam": ""
     },
     "senaryo": {
       "tip": "e-arşiv / Elektronik",
@@ -509,13 +509,13 @@
     },
     "kdv": {
       "percentages": {
-        "1": "1.00",
-        "8": "8.00",
-        "10": "10.00",
-        "18": "18.00",
-        "20": "20.00"
+        "1": true,
+        "8": true,
+        "10": true,
+        "18": true,
+        "20": true
       },
-      "toplam": "57.00"
+      "toplam": ""
     },
     "senaryo": {
       "tip": "e-arşiv / Kağıt",

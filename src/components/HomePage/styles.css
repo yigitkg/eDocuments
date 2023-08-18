@@ -1,5 +1,4 @@
 /* components/HomePage/styles.css */
-
 .mainContainer {
   width: calc(100% - 16px); /* Subtracting 8px from both sides */
   margin: 8px; /* This gives an 8px margin on all sides */

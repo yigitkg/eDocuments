@@ -3,35 +3,53 @@ import DropdownMenu from '../DropdownMenu/DropdownMenu';
 import './styles.css';
 import {
   faMagnifyingGlass,
-  faBars,
   faTablet,
   faBook,
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+/**
+ * Calculates the KDV values based on the given KDV percentages and the VHTT value.
+ *
+ * @param {Object} kdvPercentages - An object containing the KDV percentages and their activation status.
+ * @param {number} vhtt - The VHTT value.
+ * @returns {Object} - An object containing the calculated KDV values and the total KDV.
+ */
 function calculateKDVValues(kdvPercentages, vhtt) {
+  // Initialize the total KDV and KDV values object
   let totalKDV = 0;
   let kdvValues = {};
 
+  // Iterate over the KDV percentages
   for (let [percentage, isActive] of Object.entries(kdvPercentages)) {
+    // Check if the KDV percentage is active
     if (isActive) {
+      // Calculate the KDV value
       let kdvValue = (vhtt * (parseInt(percentage) / 100)).toFixed(2);
+      // Store the KDV value in the kdvValues object
       kdvValues[percentage] = kdvValue;
+      // Update the total KDV
       totalKDV += parseFloat(kdvValue);
     }
   }
-
+  // Return the calculated KDV values and the total KDV
   return { kdvValues, totalKDV: totalKDV.toFixed(2) };
 }
 
+/**
+ * Renders a list of invoices with pagination controls.
+ * Fetches the invoices from '/invoices.json' on component mount.
+ */
 function InvoiceList() {
+  // State variables
   const [invoices, setInvoices] = useState([]);
   const [perPage, setPerPage] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
   const [anchorEl, setAnchorEl] = useState(null);
   const [selectedInvoice, setSelectedInvoice] = useState(null);
 
+  // Fetch invoices on component mount
   useEffect(() => {
     fetch('/invoices.json')
       .then((response) => response.json())
@@ -41,8 +59,10 @@ function InvoiceList() {
       );
   }, []);
 
+  // Calculate the index of the last and first invoice in the current page
   const indexOfLastInvoice = currentPage * perPage;
   const indexOfFirstInvoice = indexOfLastInvoice - perPage;
+  // Get the invoices for the current page
   const currentInvoices = invoices.slice(
     indexOfFirstInvoice,
     indexOfLastInvoice
@@ -52,12 +72,14 @@ function InvoiceList() {
     <div className="invoiceListContainer">
       <h2>Fatura Listesi</h2>
       <div className="paginationControls">
+        {/* Previous page button */}
         <button
           onClick={() => setCurrentPage(currentPage - 1)}
           disabled={currentPage === 1}
         >
           Prev
         </button>
+        {/* Per page dropdown */}
         <select
           value={perPage}
           onChange={(e) => {
@@ -71,6 +93,7 @@ function InvoiceList() {
             </option>
           ))}
         </select>
+        {/* Next page button */}
         <button
           onClick={() => setCurrentPage(currentPage + 1)}
           disabled={currentInvoices.length < perPage}
@@ -78,7 +101,7 @@ function InvoiceList() {
           Next
         </button>
       </div>
-
+      {/* Invoice table */}
       <table>
         <thead>
           <tr>
@@ -95,9 +118,11 @@ function InvoiceList() {
         </thead>
         <tbody>
           {currentInvoices.map((invoice) => {
+            // Calculate VHTT value and KDV values
             const vhtt = parseFloat(
               invoice.tutar.vhtt.split(' ')[1].replace(',', '.')
             );
+            // Calculate KDV values
             const { kdvValues, totalKDV } = calculateKDVValues(
               invoice.kdv.percentages,
               vhtt
@@ -105,6 +130,7 @@ function InvoiceList() {
 
             return (
               <tr key={invoice.id}>
+                {/* Invoice number */}
                 <td className="invoiceNumber">
                   <span className="red">{invoice.faturaNo.no}</span>
                   <br />
@@ -129,13 +155,18 @@ function InvoiceList() {
                   <span className="grey">{invoice.tutar.vhtt}</span>
                 </td>
                 <td className="kdv">
+                  {/* Map over the KDV values and display each percentage and its value */}
                   {Object.entries(kdvValues).map(([key, value]) => (
                     <span key={key} className={`kdv-${key}`}>
-                      %{key} = {value} TL
+                      %{key} = {value} TL{' '}
+                      {/* Display the KDV percentage and its value */}
                       <br />
                     </span>
                   ))}
-                  <span className="kdv-total">Toplam = {totalKDV} TL</span>
+                  <span className="kdv-total">
+                    Toplam = {totalKDV} TL{' '}
+                    {/* Display the total calculated KDV */}
+                  </span>
                 </td>
                 <td>
                   <button className="actionBtn red">

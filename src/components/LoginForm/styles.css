@@ -1,5 +1,4 @@
 /* components/LoginForm/styles.css */
-
 body {
   background-color: #f3f4f6;
   display: flex;
@@ -8,12 +7,24 @@ body {
   height: 100vh;
 }
 
+.loginContainer {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .loginForm {
   max-width: 300px;
   width: 100%;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 input[type='text'],

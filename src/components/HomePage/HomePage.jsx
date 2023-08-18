@@ -4,9 +4,19 @@ import { eraseCookie } from '../../helpers/cookies';
 import InvoiceList from '../InvoiceList/InvoiceList';
 import './styles.css';
 
+/**
+ * Renders the HomePage component.
+ *
+ * @param {function} onLogout - Callback function to handle logout.
+ */
 function HomePage({ onLogout }) {
   const navigate = useNavigate();
 
+  /**
+   * Handles the click event of the logout button.
+   * Clears the user_logged_in cookie, calls the onLogout callback,
+   * and navigates to the login page.
+   */
   const handleLogoutClick = () => {
     eraseCookie('user_logged_in');
     onLogout();

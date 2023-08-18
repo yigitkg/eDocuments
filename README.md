@@ -1,6 +1,6 @@
 # E-Invoice Tracking Application
 
-![E-Invoice Banner](https://raw.githubusercontent.com/yigitkg/eDocuments/main/e-Invoice%20Screenshot.png?token=GHSAT0AAAAAACGDIZBV7CYDTAUYYIOSDKGGZG7LAXA)
+![E-Invoice Banner](https://github.com/yigitkg/eDocuments/blob/main/e-Invoice%20Screenshot.png?raw=true)
 
 This is a React-based E-Invoice tracking application, offering a range of features including filtering, a comprehensive dashboard, pagination, and secure login functionality using cookies.
 

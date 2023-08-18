@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css';
 
+function calculateTotalKDV(kdvPercentages) {
+  return Object.values(kdvPercentages)
+    .reduce((sum, value) => sum + parseFloat(value || '0'), 0)
+    .toFixed(2); // Sayıyı 2 basamaklı ondalık sayıya dönüştür
+}
+
 function InvoiceList() {
   const [invoices, setInvoices] = useState([]);
   const [perPage, setPerPage] = useState(10);
@@ -36,7 +42,7 @@ function InvoiceList() {
           value={perPage}
           onChange={(e) => {
             setPerPage(Number(e.target.value));
-            setCurrentPage(1); // Reset to the first page when changing the number of items per page
+            setCurrentPage(1);
           }}
         >
           {[10, 20, 30, 40, 50].map((num) => (
@@ -103,7 +109,9 @@ function InvoiceList() {
                       </span>
                     )
                 )}
-                <span className="kdv-total">Toplam = {invoice.kdv.toplam}</span>
+                <span className="kdv-total">
+                  Toplam = {calculateTotalKDV(invoice.kdv.percentages)}
+                </span>
               </td>
               <td>
                 <button className="actionBtn red">{invoice.senaryo.tip}</button>
@@ -124,13 +132,23 @@ function InvoiceList() {
                 {invoice.faturaDurumu}
               </td>
               <td>
-                <button className="iconBtn red"></button>
-                <button className="iconBtn orange"></button>
-                <button className="iconBtn lila"></button>
+                <button className="iconBtn blue">
+                  <i className="fa fa-trash"></i>
+                </button>
+                <button className="iconBtn orange">
+                  <i className="fa fa-pencil"></i>
+                </button>
+                <button className="iconBtn lila">
+                  <i className="fa fa-info"></i>
+                </button>
               </td>
               <td>
-                <button className="iconBtn orange"></button>
-                <button className="iconBtn yellow"></button>
+                <button className="iconBtn orange">
+                  <i className="fa fa-refresh"></i>
+                </button>
+                <button className="iconBtn yellow">
+                  <i className="fa fa-star"></i>
+                </button>
               </td>
             </tr>
           ))}

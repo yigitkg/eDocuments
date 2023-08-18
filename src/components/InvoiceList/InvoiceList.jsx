@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css';
+import {
+  faMagnifyingGlass,
+  faBars,
+  faTablet,
+  faBook,
+  faEnvelope,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function calculateKDVValues(kdvPercentages, vhtt) {
   let totalKDV = 0;
@@ -148,21 +156,21 @@ function InvoiceList() {
                 </td>
                 <td>
                   <button className="iconBtn blue">
-                    <i className="fa fa-tablet"></i>
+                    <FontAwesomeIcon icon={faTablet} />
                   </button>
                   <button className="iconBtn orange">
-                    <i className="fa fa-regular fa-book"></i>
+                    <FontAwesomeIcon icon={faBook} />
                   </button>
                   <button className="iconBtn lila">
-                    <i class="fa fa-regular fa-envelope"></i>
+                    <FontAwesomeIcon icon={faEnvelope} />
                   </button>
                 </td>
                 <td>
                   <button className="iconBtn yellow">
-                    <i className="fa fa-solid fa-magnifying-glass"></i>
+                    <FontAwesomeIcon icon={faMagnifyingGlass} />
                   </button>
                   <button className="iconBtn green">
-                    <i class="fa fa-solid fa-bars"></i>
+                    <FontAwesomeIcon icon={faBars} />
                   </button>
                 </td>
               </tr>
